@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    min-height: 100vh;
+    background-color: white;
+}
+
+.hero {
+    background-color: #151515;
+    color: white;
+    font-size: 40px;
+    height: 100vh;
+}
+
+footer {
+    padding: 80px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+li {
+    text-decoration: none;
+}
+
+.title {
+    font-size: 90px;
+    margin: 0;
+}
+
+.title-description {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.hero-area {
+    display: flex;
+    height: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    margin-left: 80px;
+    margin-bottom: 200px;
+}
+
+.button {
+    width: 200px;
+    height: 55px;
+    border-radius: 40px;
+    text-align: center;
+    background-color: coral;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #ef744b;
+}
+
+.button:active {
+    background-color: #A9A9A9;
+    color: #808080;
+}
+
+.socials {
+    padding-bottom: 200px;
+}
+
+.logo {
+    height: 80px;
+    margin: 30px;
+}
+
+.social {
+    margin: 20px;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+    padding-top: 0;
+    height: auto;
+}
+
+h2 {
+    font-size: 50px;
+    margin: 30px;
+}
+
+.headshot {
+    width: 300px;
+    border-radius: 150px;
+    height: 300px;
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+
+.project-card {
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px rgb(169, 165, 165);
+    margin: 30px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.subtext {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.project-image {
+    margin-top: 25px;
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+}
+
+.phone-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    display: none;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #ef744b;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus {
+    outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sub-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .title-description {
+        font-size: 25px;
+        margin: 10px;
+    }
+
+    .headshot {
+        width: 300px;
+        border-radius: 150pc;
+        height: 250px;
+    }
+
+    .headshot-container {
+        margin-top: 30px;
+    }
+
+    .hamburger {
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        display: block;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    ul {
+        display: none;
+        margin: 0px;
+    }
+
+    .hero-area {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .hero-text {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    ul.show {
+        display: block;
+        text-align: center;
+        padding-right: 30px;
+        width: auto;
+    }
+    nav {
+        height: 20%;
+        justify-content: flex-end;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .phone-image {
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .phone-image{
+        display: none;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .title {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    ul {
+        font-size: 20px;
+    }
+}
