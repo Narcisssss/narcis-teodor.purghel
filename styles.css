@@ -4,6 +4,21 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.information {
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in;
+}
+
+.reveal {
+    transform: translateX(0);
+}
+
+
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -14,14 +29,15 @@ section {
 }
 
 .hero {
-    background-color: #151515;
+    background-color: black;
     color: white;
     font-size: 40px;
     height: 100vh;
+    padding: 20px;
 }
 
 footer {
-    padding: 80px;
+    padding: 20px;
     background-color: black;
     color: white;
     text-align: center;
@@ -72,7 +88,7 @@ li {
     height: 55px;
     border-radius: 40px;
     text-align: center;
-    background-color: coral;
+    background-color: #333;
     font-size: 30px;
     font-weight: 300;
     padding-top: 5px;
@@ -94,7 +110,6 @@ li {
 
 .logo {
     height: 80px;
-    margin: 30px;
 }
 
 .social {
@@ -111,8 +126,6 @@ li {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 80px;
-    padding-top: 0;
     height: auto;
 }
 
@@ -125,6 +138,13 @@ h2 {
     width: 300px;
     border-radius: 150px;
     height: 300px;
+    transition: all 2s;
+}
+
+.headshot-transition {
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
 }
 
 .headshot-container {
@@ -137,11 +157,17 @@ h2 {
     height: 500px;
     box-shadow: 5px 5px 20px rgb(169, 165, 165);
     margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
 }
 
 .project-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .subtext {
@@ -164,8 +190,7 @@ h2 {
 }
 
 hr {
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 100%;
 }
 
 .project-link {
@@ -186,15 +211,47 @@ a {
     outline: 0;
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.contact input, .contact textarea, .contact button {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #ddd;
+    border-radius: 7.5px;
+}
+
+.contact button {
+    background-color: #333;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.footer-socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-footer {
+    margin: 10px;
+}
+
 @media only screen and (max-width: 1000px) {
-    .project-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
 
     .sub-section {
         flex-direction: column;
         text-align: center;
+        align-items: center;
+        padding: 40px;
     }
 
     .title {
@@ -208,8 +265,13 @@ a {
 
     .headshot {
         width: 300px;
-        border-radius: 150pc;
-        height: 250px;
+        border-radius: 150px;
+        height: 300px;
+    }
+
+    .headshot-transition {
+        width: 350px;
+        height: 350px;
     }
 
     .headshot-container {
@@ -257,6 +319,7 @@ a {
         padding-right: 30px;
         width: auto;
     }
+
     nav {
         height: 20%;
         justify-content: flex-end;
@@ -271,11 +334,82 @@ a {
     .phone-image {
         display: block;
     }
+
+    .project-image {
+        margin: 0;
+        width: 200px;
+        height: 200px;
+    }
+
+    .project-card {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sub-section-alternative {
+        padding: 0;
+    }
+
+    .subtext {
+        text-align: center;
+    }
+
+    hr {
+        margin: 0;
+        width: 100%;
+    }
+
+    .contact input, .contact textarea, .contact button {
+        padding: 5px;
+    }
+
+    .email-box {
+        font-size: 10px;
+    }
+
+    .hero {
+        padding: 0;
+    }
 }
 
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+    section {
+        height: auto;
+        width: 100%;
+    }
 
-@media only screen and (max-width: 500px) {
-    .phone-image{
+    .phone-image {
+        display: none;
+    }
+
+    ul {
+        font-size: 20px;
+    }
+
+    .hero {
+        height: auto;
+    }
+
+    .button {
+        width: 100px;
+        height: 30px;
+        border-radius: 40px;
+        text-align: center;
+        background-color: coral;
+        font-size: 16px;
+        font-weight: 300;
+        padding-top: 2.5px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .phone-image {
         display: none;
     }
 
@@ -291,4 +425,25 @@ a {
     ul {
         font-size: 20px;
     }
+
+    nav {
+        height: 25%;
+    }
+
+    .hero-area {
+        height: 75%;
+    }
+
+
+    .headshot {
+        width: 250px;
+        height: 250px;
+    }
+
+    .headshot-transition {
+        width: 300px;
+        height: 300px;
+    }
+
 }
+
