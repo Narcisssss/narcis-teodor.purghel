@@ -177,9 +177,10 @@ h2 {
 
 .project-image {
     margin-top: 25px;
+    margin-bottom: 25px;
     width: 250px;
     height: 250px;
-    border-radius: 125px;
+    border-radius: 120px;
 }
 
 .phone-image {
