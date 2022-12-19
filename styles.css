@@ -46,6 +46,7 @@ footer {
 nav {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 ul {
@@ -108,9 +109,6 @@ li {
     padding-bottom: 200px;
 }
 
-.logo {
-    height: 80px;
-}
 
 .social {
     margin: 20px;
@@ -177,6 +175,12 @@ h2 {
 
 .about-me-description {
     font-size: 18px;
+}
+
+.resume {
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 
 .project-image {
