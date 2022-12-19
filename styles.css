@@ -175,6 +175,10 @@ h2 {
     font-weight: 300;
 }
 
+.about-me-description {
+    font-size: 18px;
+}
+
 .project-image {
     margin-top: 25px;
     margin-bottom: 25px;
