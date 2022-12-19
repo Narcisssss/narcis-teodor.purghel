@@ -45,7 +45,7 @@ footer {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     position: relative;
 }
 
@@ -179,8 +179,8 @@ h2 {
 
 .resume {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 10px;
+    left: 10px;
 }
 
 .project-image {
@@ -254,7 +254,7 @@ a {
     margin: 10px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
 
     .sub-section {
         flex-direction: column;
@@ -297,6 +297,11 @@ a {
         align-self: flex-end;
     }
 
+    .resume {
+        top: 20px;
+        left: 20px;
+    }
+
     ul {
         display: none;
         margin: 0px;
@@ -336,9 +341,6 @@ a {
         align-items: flex-end;
     }
 
-    .logo {
-        display: none;
-    }
 
     .phone-image {
         display: block;
